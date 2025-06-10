@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt,uplatex]{jsreport}
+
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+
+\title{TITLE}
+\author{AAA\\BBB}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{はじめに}
+\section{DDD}
+
+アイテマイズ
+\begin{itemize}
+	\item 第1章: 大まかな社会的背景や論文構成を述べる。
+	\item 第2章: 本研究で扱うトラウマや治療法の説明を行う。
+	\item 第3章: 先行研究の成果と問題点を述べる。
+	\item 第4章: 問題点を整理し、解決手法と実装方法を述べる。
+	\item 第5章: 実際に作成したアプリケーションの、機能の解説と実験と結果を述べる。
+	\item 第6章: 本研究のまとめと今後の課題について述べる。
+\end{itemize}
+
+
+次の図\ref{FIG:p1}に示す。
+\begin{figure}[h]
+	\fontsize{12pt}{0cm}\selectfont
+	\centering
+	\renewcommand{\figurename}{図}
+	\includegraphics[height=5cm]{img.jpg}
+	\caption{パルサー}
+	\label{FIG:p1}
+\end{figure}
+
+表
+\begin{table}[htbp]
+    \caption{表タイトル}
+    \centering
+    \begin{tabular}{|l||r|r|}
+        \hline
+        モード名 & 取得間隔 & 1秒間に取得できるデータ数\\
+        \hline
+        \hline
+        AAA & BBB & CCC\\
+        \hline
+        AAA & BBB & CCC\\
+        \hline
+        AAA & BBB & CCC\\
+        \hline
+        AAA & BBB & CCC\\
+        \hline
+    \end{tabular}
+    \label{TB:1}
+\end{table}\\
+
+
+次の図\ref{FIG:app2}, \ref{FIG:app3}を示す。\\
+\begin{figure}[htbp]
+	\begin{minipage}[b]{0.45\linewidth}
+		\centering
+		\includegraphics[keepaspectratio, scale=0.2]{xxx.jpg}
+		\caption{XXX}
+		\label{FIG:yyy}
+	\end{minipage}
+	\begin{minipage}[b]{0.45\linewidth}
+		\centering
+		\includegraphics[keepaspectratio, scale=0.2]{yyy.jpg}
+		\caption{YYY}
+		\label{FIG:xxx}
+	\end{minipage}
+\end{figure}\\
+
+\end{document}
